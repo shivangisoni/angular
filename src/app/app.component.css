@@ -1,0 +1,6 @@
+/* <a [href]="projectUrl" [textContent]="projectName"
+   [ngStyle]="{
+     'color' : setColor ? 'red' : 'green',
+     'fontWeight' : setWeight ? 'bold' : 'normal'
+   }">
+</a> */

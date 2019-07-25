@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shivi';
-  projectName = 'Angular Tutorial by Shivi';
+  projectName = 'Shivi';
+  projectUrl = 'https://www.google.com';
+  setColor = true;
+  setWeight = true;
+
+  movie = {
+    name : 'Titanic',
+    liked : true
+  }
+
+  likeSwitch($event){
+    this.movie.liked = false; 
+  }
 }

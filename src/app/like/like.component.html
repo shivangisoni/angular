@@ -1,0 +1,11 @@
+<p (click)="testMethod($event)">
+  Like:
+  <a href="javascript:void(0);" (click)="likeChange($event)">
+  <i class ="fa"
+           [ngClass] = "{
+             'fa-heart active' : liked,
+             'fa-heart-o' : !liked
+           }">
+  </i>
+  </a>
+</p>

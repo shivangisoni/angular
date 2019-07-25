@@ -1,0 +1,19 @@
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'like',
+  templateUrl: './like.component.html',
+  styles: [`.active{color:red}`]
+})
+export class LikeComponent  {
+  @Input('userlike') liked;
+  @Output() likeToggle = new EventEmitter();
+
+
+  likeChange($event){
+    $event.stopPropagation();
+    this.likeToggle.emit();
+  }
+
+
+}

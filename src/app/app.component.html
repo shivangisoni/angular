@@ -1,4 +1,7 @@
 <h1>
-  App Working!! {{projectName}}
-  <sa-first></sa-first>
+  Class Property:  {{projectName}}
+  <hr>
+  <like [userlike]="movie.liked" (likeToggle)="likeSwitch($event)"></like>
 </h1>
+
+
