@@ -1,7 +1,30 @@
-<h1>
+<input type="text" [(ngModel)]="color">
+
+<h2 [ngStyle]=
+  "{
+
+      'color': color
+
+
+  }">
+
+    Just for Visual purpose..!!
+
+</h2>
+
+
+<!--
+  <h1>
   Class Property:  {{projectName}}
+  <br>
+  <input type="text" [(ngModel)]="projectName">
   <hr>
-  <like [userlike]="movie.liked" (likeToggle)="likeSwitch($event)"></like>
+
 </h1>
 
+<like [userlike]="movie.liked" (likeToggle)="likeSwitch($event)"></like>
 
+      'text-decoration':'underline',
+      'font-size':'2em',
+      'background-color': setBg() ? 'orange' : 'yellow'
+-->

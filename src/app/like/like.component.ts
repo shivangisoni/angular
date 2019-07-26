@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class LikeComponent  {
   @Input('userlike') liked;
   @Output() likeToggle = new EventEmitter();
+  Foods = ['Pasta','Pizza','Maggie','Sandwich','Burger','Pastry'];
 
 
   likeChange($event){

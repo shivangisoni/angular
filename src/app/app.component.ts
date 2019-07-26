@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shivi';
+  color = 'brown';
+  //setColor = 'blue';
   projectName = 'Shivi';
   projectUrl = 'https://www.google.com';
   setColor = true;
@@ -18,6 +20,10 @@ export class AppComponent {
   }
 
   likeSwitch($event){
-    this.movie.liked = false; 
+    this.movie.liked = !this.movie.liked;
+  }
+
+  setBg(){
+    return true;
   }
 }

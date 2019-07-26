@@ -1,5 +1,5 @@
-<p (click)="testMethod($event)">
-  Like:
+<h2 *ngFor = "let food of Foods;let i = index" >
+  {{i+1}} : {{food}} -
   <a href="javascript:void(0);" (click)="likeChange($event)">
   <i class ="fa"
            [ngClass] = "{
@@ -8,4 +8,7 @@
            }">
   </i>
   </a>
-</p>
+</h2>
+
+<span *ngIf="liked">Liked by User</span>
+<span *ngIf="!liked">Unliked by User</span>
