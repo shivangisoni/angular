@@ -4,3 +4,13 @@
      'fontWeight' : setWeight ? 'bold' : 'normal'
    }">
 </a> */
+
+.active{
+  color: black;
+  border: 1px solid orchid;
+  background-color: papayawhip;
+}
+
+.large{
+  font-size: 3em;
+}

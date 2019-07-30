@@ -9,7 +9,7 @@ export class LikeComponent  {
   @Input('userlike') liked;
   @Output() likeToggle = new EventEmitter();
   Foods = ['Pasta','Pizza','Maggie','Sandwich','Burger','Pastry'];
-
+  foodType = "abc";
 
   likeChange($event){
     $event.stopPropagation();

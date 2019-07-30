@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shivi';
-  color = 'brown';
+  //color = 'brown';
   //setColor = 'blue';
   projectName = 'Shivi';
   projectUrl = 'https://www.google.com';
@@ -24,6 +24,6 @@ export class AppComponent {
   }
 
   setBg(){
-    return true;
+    return false;
   }
 }

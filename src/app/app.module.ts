@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first.component';
 import { SecondComponent } from './second/second.component';
 import { LikeComponent } from './like/like.component';
+import { WoweffectDirective } from './directives/woweffect.directive';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { LikeComponent } from './like/like.component';
     AppComponent,
     FirstComponent,
     SecondComponent,
-    LikeComponent
+    LikeComponent,
+    WoweffectDirective
   ],
   imports: [
     BrowserModule,
