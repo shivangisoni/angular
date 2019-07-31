@@ -1,4 +1,18 @@
-<a href='#!'[class.active]="foodType == 'all'" (click)="foodType='all'">All</a> |
+<h1>Hello</h1>
+
+<h2 *ngFor="let food of foods; let i = index" >
+  {{i+1}} :
+  <a href="javascript:void(0);" (click)="likeChange($event)">
+  {{food}} </a>
+</h2>
+
+
+
+
+
+
+
+<!-- <a href='#!'[class.active]="foodType == 'all'" (click)="foodType='all'">All</a> |
 <a href='#!'[class.active]="foodType == 'snacks'" (click)="foodType='snacks'">Snacks</a> |
 <a href='#!'[class.active]="foodType == 'ind'" (click)="foodType='ind'">Indian</a> |
 <a href='#!'[class.active]="foodType == 'itl'" (click)="foodType='itl'">Italian</a> |
@@ -6,7 +20,7 @@
 
 <div [ngSwitch]="foodType">
 
-<!--ngSwtich Templates-->
+ngSwtich Templates
 
 <div *ngSwitchCase="'all'">All foods</div>
 <div *ngSwitchCase="'snacks'">Snack foods</div>
@@ -17,26 +31,7 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-<!-- <h2 *ngFor = "let food of Foods;let i = index" >
-  {{i+1}} : {{food}} -
-  <a href="javascript:void(0);" (click)="likeChange($event)">
-  <i class ="fa"
-           [ngClass] = "{
-             'fa-heart active' : liked,
-             'fa-heart-o' : !liked
-           }">
-  </i>
-  </a>
-</h2>
-
 <span *ngIf="liked">Liked by User</span>
-<span *ngIf="!liked">Unliked by User</span> -->
+<span *ngIf="!liked">Unliked by User</span>
+-->
+
