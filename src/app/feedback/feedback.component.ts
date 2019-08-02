@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -11,8 +12,9 @@ export class FeedbackComponent {
     console.log(field)
   } */
 
-    onSubmit(){
-      console.log('Form Submitted');
+    onSubmit(form:NgForm){
+      console.log(form);
+      alert(form.value.firstName);
     }
 
 }
